@@ -1,0 +1,4 @@
+dbuser=vds
+dbpass=Nerryad3
+dbhost=localhost
+dbname=dev_free_db
