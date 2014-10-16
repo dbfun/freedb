@@ -23,9 +23,9 @@ while true
 
   results=`mysql -s -N -u$test_user -p$test_password -h$test_host --database=$test_database -e ";" 2>&1`
 
-  denied_test=`echo "$results" | grep 'Access denied'`
+  # denied_test=`echo "$results" | grep 'Access denied'`
 
-  if [ -z "$denied_test" ]; then  
+  if [ "$?" == "0" ]; then  
     # FREE
     is_access=1
   else
